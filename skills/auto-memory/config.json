@@ -1,0 +1,84 @@
+{
+  "system_name": "自动记忆系统",
+  "version": "1.0.0",
+  "created_date": "2026-02-20",
+  
+  "directories": {
+    "memory_dir": "/home/administrator/.openclaw/workspace/memory",
+    "conversation_dir": "/home/administrator/.openclaw/workspace/conversations",
+    "log_dir": "/home/administrator/.openclaw/workspace/logs",
+    "report_dir": "/home/administrator/.openclaw/workspace/reports"
+  },
+  
+  "recording_settings": {
+    "auto_start": true,
+    "save_interval_seconds": 60,
+    "max_file_size_mb": 1,
+    "compress_old_files": true,
+    "keep_days": 30
+  },
+  
+  "extraction_settings": {
+    "important_keywords": [
+      "记住", "重要", "保存", "提醒", "计划",
+      "明天", "测试", "验证", "执行", "完成",
+      "兆龙互连", "起床提醒", "飞书", "cron",
+      "技能", "学习", "材料", "准备", "立即"
+    ],
+    "instruction_keywords": [
+      "需要", "要求", "必须", "应该", "要", "请",
+      "帮我", "帮忙", "协助", "处理", "解决"
+    ],
+    "auto_extract": true,
+    "extract_confidence": 0.7
+  },
+  
+  "search_settings": {
+    "enable_fuzzy_search": true,
+    "max_results": 50,
+    "search_timeout_seconds": 10,
+    "highlight_matches": true
+  },
+  
+  "cleaning_settings": {
+    "auto_clean": true,
+    "clean_interval_days": 7,
+    "keep_conversation_days": 30,
+    "keep_log_days": 90,
+    "keep_report_days": 365
+  },
+  
+  "notification_settings": {
+    "enable_notifications": true,
+    "notify_on_important": true,
+    "notify_on_error": true,
+    "notification_channel": "feishu"
+  },
+  
+  "performance_settings": {
+    "max_concurrent_searches": 5,
+    "cache_size_mb": 100,
+    "index_update_interval_hours": 24
+  },
+  
+  "security_settings": {
+    "encrypt_sensitive": false,
+    "log_sensitive_data": false,
+    "allow_remote_access": false,
+    "require_authentication": false
+  },
+  
+  "backup_settings": {
+    "auto_backup": true,
+    "backup_interval_days": 7,
+    "backup_location": "/home/administrator/.openclaw/backups",
+    "keep_backups": 4
+  },
+  
+  "debug_settings": {
+    "log_level": "INFO",
+    "enable_debug_log": false,
+    "log_to_console": true,
+    "log_to_file": true
+  }
+}

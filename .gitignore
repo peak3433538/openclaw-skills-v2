@@ -1,0 +1,15 @@
+node_modules/
+*.log
+.DS_Store
+.env
+__pycache__/
+*.pyc
+memory/
+MEMORY.md
+USER.md
+SOUL.md
+IDENTITY.md
+HEARTBEAT.md
+BOOTSTRAP.md
+AGENTS.md
+TOOLS.md
